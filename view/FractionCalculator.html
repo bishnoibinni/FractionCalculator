@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraction Calculator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/custom/stylesheet/fractionCalculator.css">
+</head>
+<body>
+    <div class="section col-md-12">
+        <div class="application-header">
+            <h1>Fraction Calculator</h1>
+        </div>
+        <form name="formSubmit" id="formSubmit">
+            <div class="container col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input name="num1" class="required onlyNumeric" type="text" id="num1"/>
+                        <input name="denom1" class="required nonZeroDenominator dnum" type="text" id="denom1" />
+                    </div>
+                    <div class="col-md-2">
+                        <select class="required" name="ops" id="ops" title="Please select the operation">
+                            <option value="">Select...</option>
+                            <option value="+">Addition(+)</option>
+                            <option value="-">Subtraction(-)</option>
+                            <option value="/">Division(/)</option>
+                            <option value="*">Multiplication(*)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <input name="num2"class="required onlyNumeric" type="text" id="num2"/>
+                        <input name="denom2" class="required nonZeroDenominator dnum" type="text" id="denom2" />
+                    </div>
+                    <button type="button" class="btn-sm btn-primary col-md-1" name="equals" id="equals">Calculate</button>
+                    <div class="col-md-3">
+                        <input name="num3" type="text" id="num3"/>
+                        <input name="denom3" type="text" class="dnum" id="denom3" />
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="col-md-2" id="errorDiv" name="errorDiv">
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../public/custom/javascript/customValidation.js"></script>
+    <script type="text/javascript" src="../public/custom/javascript/fractionCalculator.js"></script>
+</body>
+</html>
